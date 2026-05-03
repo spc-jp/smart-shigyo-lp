@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart士業クラウド | 士業のための提案自動化プラットフォーム</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-bg {
+      background-image: radial-gradient(circle at top right, #eef2ff 0%, #ffffff 50%, #f8fafc 100%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="bg-white/80 backdrop-blur-md fixed w-full z-50 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">S</div>
+          <span class="font-bold text-xl tracking-tight text-slate-900">Smart士業クラウド</span>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#products" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">プロダクト</a>
+          <a href="#features" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">選ばれる理由</a>
+          <a href="#pricing" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">料金</a>
+          <button class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full font-medium shadow-md shadow-blue-500/30 transition-all transform hover:-translate-y-0.5">
+            無料トライアル
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Panel -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 absolute w-full shadow-lg">
+      <div class="px-4 pt-2 pb-6 space-y-2">
+        <a href="#products" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-md">プロダクト</a>
+        <a href="#features" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-md">選ばれる理由</a>
+        <a href="#pricing" class="block px-3 py-3 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-md">料金</a>
+        <button class="w-full mt-4 bg-blue-600 text-white px-5 py-3 rounded-xl font-medium shadow-md">
+          無料トライアル
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-28 pb-16 md:pt-32 md:pb-20 hero-bg overflow-hidden relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-4xl mx-auto">
+        <span class="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs md:text-sm font-semibold mb-6">
+          税理士・社会保険労務士 向け
+        </span>
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight">
+          「作業」を減らし、<br class="hidden md:block" />
+          顧問先が泣いて喜ぶ<span class="gradient-text">「提案」</span>を増やす。
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+          Smart士業クラウドは、節税提案、助成金検知、法改正対応など、高度な専門知識が必要な業務を自動化・可視化するアプリシリーズです。
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 px-4 sm:px-0">
+          <button class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-blue-600/30 transition-all transform hover:-translate-y-1 flex items-center justify-center">
+            無料で試してみる
+            <i class="fas fa-arrow-right ml-2"></i>
+          </button>
+          <button class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-full font-bold text-lg shadow-sm transition-all flex items-center justify-center">
+            <i class="fas fa-play-circle text-blue-600 mr-2"></i>
+            サービス紹介動画
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Abstract Decoration -->
+    <div class="absolute top-20 left-0 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+    <div class="absolute top-40 right-20 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+  </section>
+
+  <!-- Logos Section -->
+  <section class="py-10 border-y border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-sm font-semibold text-slate-400 mb-6 uppercase tracking-wider">導入実績（ダミー）</p>
+      <div class="flex justify-center gap-8 md:gap-16 opacity-50 grayscale flex-wrap">
+        <i class="fab fa-aws text-4xl"></i>
+        <i class="fab fa-stripe text-4xl"></i>
+        <i class="fab fa-slack text-4xl"></i>
+        <i class="fab fa-github text-4xl"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Suite Section -->
+  <section id="products" class="py-16 md:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-4">圧倒的な価値を生む、3つのプロダクト</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">税務・労務それぞれの専門領域に特化したツールが、あなたの事務所の強力な武器になります。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- App 1: 旅費規程 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-full h-1 bg-amber-500"></div>
+          <div class="w-14 h-14 bg-amber-50 text-amber-500 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-plane-departure"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Smart旅費規程</h3>
+          <p class="text-sm font-semibold text-amber-600 mb-4">【税理士向け】節税の丸投げツール</p>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            役員・従業員の出張日当を最適化。節税額のシミュレーションから、税務調査に耐えうる規程書の自動生成、経理の定額精算までワンストップで実現します。
+          </p>
+          <ul class="text-sm text-slate-500 space-y-2 mb-8">
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>節税効果のリアルタイム計算</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>ヒアリング式規程書ジェネレーター</li>
+          </ul>
+          <a href="#" class="text-amber-600 font-medium hover:text-amber-700 flex items-center text-sm">
+            詳細を見る <i class="fas fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+
+        <!-- App 2: 助成金アラート -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
+          <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-search-dollar"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Smart助成金シグナル</h3>
+          <p class="text-sm font-semibold text-blue-600 mb-4">【社労士向け】提案機会の自動検知</p>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            顧問先の勤怠・人事データと連携。最新の助成金要件と照らし合わせ、「今申請できる助成金」を自動検知してアラート通知。提案の機会損失を防ぎます。
+          </p>
+          <ul class="text-sm text-slate-500 space-y-2 mb-8">
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>主要クラウド勤怠システム連携</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>最新の助成金データベース自動更新</li>
+          </ul>
+          <a href="#" class="text-blue-600 font-medium hover:text-blue-700 flex items-center text-sm">
+            詳細を見る <i class="fas fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+
+        <!-- App 3: 就業規則チェッカー -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden group">
+          <div class="absolute top-0 left-0 w-full h-1 bg-purple-500"></div>
+          <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Smart就業規則チェッカー</h3>
+          <p class="text-sm font-semibold text-purple-600 mb-4">【社労士向け】法改正対応の自動化</p>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            毎年の法改正対応をAIがアシスト。顧問先の既存の就業規則（Word等）を解析し、修正が必要な条文のハイライトと、新旧対照表を自動で生成します。
+          </p>
+          <ul class="text-sm text-slate-500 space-y-2 mb-8">
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Wordファイルの一括解析</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>修正案と新旧対照表の自動出力</li>
+          </ul>
+          <a href="#" class="text-purple-600 font-medium hover:text-purple-700 flex items-center text-sm">
+            詳細を見る <i class="fas fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept UI Showcase (Image mockup placeholder) -->
+  <section class="py-16 md:py-24 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
+        <div class="lg:w-1/2">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">ダッシュボードで、<br/>全顧問先の状況をひと目で把握</h2>
+          <p class="text-slate-600 mb-6 leading-relaxed text-sm sm:text-base">
+            各ツールのデータは、士業向けの専用ダッシュボードに集約されます。「助成金申請の期限が近い企業」「就業規則の更新が滞っている企業」が一目でわかり、優先順位の高い業務から着手できます。
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold">1</div>
+              <div class="ml-4">
+                <h4 class="text-lg font-bold text-slate-800">アラート駆動の提案営業</h4>
+                <p class="text-sm text-slate-500 mt-1">システムからの通知をベースに連絡するだけで、自然なアップセル提案が可能です。</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold">2</div>
+              <div class="ml-4">
+                <h4 class="text-lg font-bold text-slate-800">顧問先との共同編集機能</h4>
+                <p class="text-sm text-slate-500 mt-1">規程書などはクラウド上で顧問先と共有・共同編集でき、メールでのファイル往復をなくします。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2 relative">
+          <!-- Mockup UI Container -->
+          <div class="bg-slate-800 rounded-2xl shadow-2xl p-2 relative z-10 transform rotate-1 hover:rotate-0 transition-transform duration-500">
+            <div class="flex items-center space-x-2 px-3 pb-2 pt-1">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <div class="bg-slate-50 rounded-xl overflow-hidden h-80 flex flex-col relative">
+              <!-- Mock Dashboard Content -->
+              <div class="p-4 border-b border-slate-200 bg-white flex justify-between items-center">
+                <span class="font-bold text-slate-700 text-sm">士業ポータル</span>
+                <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded-full">未対応アラート: 3件</span>
+              </div>
+              <div class="p-4 flex-1 bg-slate-50/50 space-y-3">
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-l-4 border-l-blue-500 flex justify-between items-center">
+                  <div>
+                    <p class="text-xs text-slate-500">株式会社A</p>
+                    <p class="text-sm font-bold">キャリアアップ助成金の要件を満たしました</p>
+                  </div>
+                  <button class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded">提案する</button>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-l-4 border-l-purple-500 flex justify-between items-center">
+                  <div>
+                    <p class="text-xs text-slate-500">株式会社B</p>
+                    <p class="text-sm font-bold">就業規則の育児休業規定が旧法のままです</p>
+                  </div>
+                  <button class="text-xs bg-purple-50 text-purple-600 px-3 py-1 rounded">修正案作成</button>
+                </div>
+              </div>
+              <div class="absolute bottom-0 w-full h-24 bg-gradient-to-t from-slate-50 to-transparent"></div>
+            </div>
+          </div>
+          <!-- Background blob -->
+          <div class="absolute -top-10 -right-10 w-64 h-64 bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 z-0"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section (新規追加) -->
+  <section id="pricing" class="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">事務所の規模に合わせたシンプルな料金</h2>
+        <p class="text-slate-600">全プロダクトをご利用いただけるオールインワンプランです。</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Plan 1 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900 mb-2">スターター</h3>
+          <p class="text-slate-500 text-sm mb-6">個人事務所・小規模向け</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-slate-900">¥9,800</span><span class="text-slate-500">/月</span>
+          </div>
+          <ul class="space-y-3 text-sm text-slate-600 mb-8 border-t border-slate-100 pt-6">
+            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>登録顧問先数: 10社まで</li>
+            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>全3アプリ利用可能</li>
+            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>メールサポート</li>
+          </ul>
+          <button class="w-full py-3 rounded-lg border border-blue-600 text-blue-600 font-medium hover:bg-blue-50 transition-colors">無料トライアル</button>
+        </div>
+        
+        <!-- Plan 2 (Popular) -->
+        <div class="bg-blue-600 rounded-2xl p-8 shadow-xl transform md:-translate-y-4 relative">
+          <div class="absolute top-0 inset-x-0 flex justify-center -translate-y-1/2">
+            <span class="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">一番人気</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">スタンダード</h3>
+          <p class="text-blue-200 text-sm mb-6">成長中の士業法人向け</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-white">¥29,800</span><span class="text-blue-200">/月</span>
+          </div>
+          <ul class="space-y-3 text-sm text-white mb-8 border-t border-blue-500 pt-6">
+            <li class="flex items-center"><i class="fas fa-check text-white mr-2"></i>登録顧問先数: 50社まで</li>
+            <li class="flex items-center"><i class="fas fa-check text-white mr-2"></i>全3アプリ利用可能</li>
+            <li class="flex items-center"><i class="fas fa-check text-white mr-2"></i>チャット/オンラインサポート</li>
+            <li class="flex items-center"><i class="fas fa-check text-white mr-2"></i>顧問先用アカウント発行(無制限)</li>
+          </ul>
+          <button class="w-full py-3 rounded-lg bg-white text-blue-600 font-bold hover:bg-slate-50 transition-colors">無料トライアル</button>
+        </div>
+        
+        <!-- Plan 3 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900 mb-2">プロフェッショナル</h3>
+          <p class="text-slate-500 text-sm mb-6">大規模法人・グループ向け</p>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-slate-900">¥79,800</span><span class="text-slate-500">/月</span>
+          </div>
+          <ul class="space-y-3 text-sm text-slate-600 mb-8 border-t border-slate-100 pt-6">
+            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>登録顧問先数: 無制限</li>
+            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>全機能利用可能</li>
+            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>専任カスタマーサクセス</li>
+            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>API連携サポート</li>
+          </ul>
+          <button class="w-full py-3 rounded-lg border border-blue-600 text-blue-600 font-medium hover:bg-blue-50 transition-colors">お問い合わせ</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (新規追加) -->
+  <section class="py-16 md:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">よくあるご質問</h2>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+          <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+            <span class="text-blue-600 mr-2">Q.</span> 顧問先企業が直接契約して使うことはできますか？
+          </h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            A. 本サービスは士業事務所様向けのプラットフォームとなっております。事務所様にご契約いただき、顧問先企業様には「共有アカウント」を発行してご利用いただく形になります。
+          </p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+          <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+            <span class="text-blue-600 mr-2">Q.</span> 導入のサポートはありますか？
+          </h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            A. はい、スタンダードプラン以上のご契約で、初期設定や顧問先へのご案内方法などを専任スタッフがオンラインでサポートいたします。
+          </p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+          <h4 class="font-bold text-slate-800 mb-2 flex items-center">
+            <span class="text-blue-600 mr-2">Q.</span> セキュリティ対策はどうなっていますか？
+          </h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            A. お預かりするデータはすべて暗号化され、国内の堅牢なデータセンターで管理されています。金融機関レベルのセキュリティ基準を満たしておりますのでご安心ください。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & CTA Section (統合・お問い合わせ追加) -->
+  <section id="contact" class="py-16 md:py-24 bg-slate-900 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20">
+        
+        <!-- Left: CTA -->
+        <div class="text-white flex flex-col justify-center">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-4">まずは、14日間無料で<br/>お試しください</h2>
+          <p class="text-slate-300 mb-8 text-sm sm:text-base leading-relaxed">
+            すべての機能を制限なくお使いいただけます。クレジットカードの登録は不要です。導入に迷われている方は、まずは資料請求やオンライン相談をご利用ください。
+          </p>
+          <button class="w-full sm:w-auto bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-transform transform hover:scale-105 mb-4 text-center">
+            無料トライアルを始める
+          </button>
+          <button class="w-full sm:w-auto bg-white/10 text-white hover:bg-white/20 px-8 py-4 rounded-full font-bold text-lg border border-white/30 transition-colors text-center">
+            <i class="fas fa-file-download mr-2"></i>3分でわかるサービス資料
+          </button>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="bg-white rounded-2xl p-8 shadow-xl">
+          <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center">
+            <i class="fas fa-envelope text-blue-600 mr-2"></i>お問い合わせ・ご相談
+          </h3>
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1">事務所名・会社名</label>
+              <input type="text" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm" placeholder="例: スマート税理士法人">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1">お名前</label>
+              <input type="text" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm" placeholder="例: 山田 太郎">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1">メールアドレス</label>
+              <input type="email" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm" placeholder="例: info@example.com">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1">お問い合わせ内容</label>
+              <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm mb-2">
+                <option>導入についての相談（オンラインミーティング希望）</option>
+                <option>機能についての質問</option>
+                <option>料金プランについて</option>
+                <option>その他</option>
+              </select>
+              <textarea class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-sm h-24" placeholder="具体的なご質問やご要望があればご記入ください"></textarea>
+            </div>
+            <button type="button" class="w-full bg-slate-800 text-white px-6 py-3 rounded-lg font-bold hover:bg-slate-700 transition-colors">
+              送信する
+            </button>
+            <p class="text-xs text-slate-500 text-center mt-4">送信することで、プライバシーポリシーに同意したものとみなされます。</p>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Decorative elements -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-600 opacity-20 rounded-full blur-3xl mix-blend-screen"></div>
+    <div class="absolute bottom-10 right-10 w-64 h-64 bg-purple-600 opacity-20 rounded-full blur-3xl mix-blend-screen"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="col-span-1 md:col-span-2">
+        <div class="flex items-center space-x-2 mb-4">
+          <div class="w-6 h-6 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-xs">S</div>
+          <span class="font-bold text-lg text-white">Smart士業クラウド</span>
+        </div>
+        <p class="text-sm text-slate-500 max-w-xs">士業の専門知識をテクノロジーでエンパワーし、日本の中小企業を元気にします。</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">プロダクト</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition-colors">Smart旅費規程</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Smart助成金シグナル</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Smart就業規則チェッカー</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">会社情報</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition-colors">運営会社</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-sm text-center">
+      &copy; 2026 Smart Solutions Inc. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      const icon = btn.querySelector('i');
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        } else {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
